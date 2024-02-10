@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Players\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BadmintonStars.Domain\BadmintonStars.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
