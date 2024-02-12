@@ -14,9 +14,9 @@ namespace BadmintonStars.Infrastructure.Repositories
             return await _dataContext.Players.ToListAsync();
         }
 
-        public async Task<PlayerModel> GetPlayerById(int id)
+        public async Task<PlayerModel?> GetPlayerById(int id)
         {
-            return await _dataContext.Players.AsNoTracking().FirstOrDefaultAsync(m => m.Id == id);
+            return await _dataContext.Players.AsNoTracking().FirstOrDefaultAsync(m => m.Id == id);   
         }
 
         public async Task<PlayerModel> AddPlayer(PlayerModel player)
