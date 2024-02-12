@@ -6,11 +6,7 @@ using BadmintonStars.Application.Player.Queries.GetPlayerById;
 using BadmintonStars.Domain.Entities;
 using BadmintonStars.Infrastructure.Data;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Security.Cryptography.X509Certificates;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace BadmintonStars.API.Controllers
 {

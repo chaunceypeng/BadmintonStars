@@ -2,12 +2,6 @@
 using BadmintonStars.Domain.Repositories;
 using BadmintonStars.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BadmintonStars.Infrastructure.Repositories
 {
