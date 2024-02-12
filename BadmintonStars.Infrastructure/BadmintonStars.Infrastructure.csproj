@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BadmintonStars.Domain\BadmintonStars.Domain.csproj" />
+    <ProjectReference Include="..\BadmintonStars.Application\BadmintonStars.Application.csproj" />
   </ItemGroup>
 
 </Project>
