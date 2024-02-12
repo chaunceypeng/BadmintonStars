@@ -1,12 +1,6 @@
-﻿using BadmintonStars.Domain.Repositories;
-using BadmintonStars.Domain.Entities;
+﻿using BadmintonStars.Domain.Entities;
+using BadmintonStars.Domain.Repositories;
 using MediatR;
-using MediatR.Pipeline;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BadmintonStars.Application.Player.Commands.AddPlayer
 {
