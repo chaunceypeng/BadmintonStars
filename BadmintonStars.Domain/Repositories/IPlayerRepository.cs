@@ -1,4 +1,4 @@
-﻿using BadmintonStars.Domain.Entity;
+﻿using BadmintonStars.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,10 @@ namespace BadmintonStars.Domain.Repositories
 {
     public interface IPlayerRepository
     {
-        public Task<List<Player>> GetAllPlayers();
-        public Task<Player> AddPlayer(Player player);
+        public Task<List<PlayerModel>> GetAllPlayers();
+        public Task<PlayerModel> GetPlayerById(int id);
+        public Task<PlayerModel> AddPlayer(PlayerModel player);
+        public Task<int> UpdatePlayer(int id, PlayerModel player);
+        public Task<int> DeletePlayer(int id);
     }
 }

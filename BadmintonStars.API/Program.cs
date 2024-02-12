@@ -1,3 +1,4 @@
+using BadmintonStars.Application.Services;
 using BadmintonStars.Infrastructure.Data;
 using BadmintonStars.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 
 builder.Services.AddControllers();
