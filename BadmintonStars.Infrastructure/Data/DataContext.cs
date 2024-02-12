@@ -1,4 +1,4 @@
-﻿using BadmintonStars.Domain.Entity;
+﻿using BadmintonStars.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,7 +15,7 @@ namespace BadmintonStars.Infrastructure.Data
             
         }
 
-        public DbSet<Player> Players { get; set; }
+        public DbSet<PlayerModel> Players { get; set; }
     }
 }
  

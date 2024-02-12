@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BadmintonStars.Domain.Entity
+namespace BadmintonStars.Domain.Entities
 {
-    public class Player
+    public class PlayerModel
     {
         public int Id { get; set; } 
         public string FirstName { get; set; } = string.Empty;
