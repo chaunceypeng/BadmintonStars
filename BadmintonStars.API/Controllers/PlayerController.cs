@@ -15,7 +15,8 @@ namespace BadmintonStars.API.Controllers
     public class PlayerController : ControllerBase
     {
         private readonly IMediator _mediator;
-        public PlayerController(IMediator mediator, DataContext dataContext)
+
+        public PlayerController(IMediator mediator)
         {
             _mediator = mediator;
         }

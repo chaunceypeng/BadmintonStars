@@ -14,3 +14,4 @@ namespace BadmintonStars.Application.Player.Queries.GetPlayerById
 
    // public record GetPlayerByIdQuery(int Id) : IRequest<Domain.Entities.Player>;
 }
+ 
