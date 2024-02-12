@@ -1,7 +1,8 @@
-﻿using BadmintonStars.Domain.Repositories;
+﻿using BadmintonStars.Application.Player.Commands;
+using BadmintonStars.Domain.Repositories;
 using MediatR;
 
-namespace BadmintonStars.Application.Player.Commands.DeletePlayer
+namespace BadmintonStars.Application.Player.Handlers
 {
     public class DeletePlayerCommandHandler : IRequestHandler<DeletePlayerCommand, int>
     {
@@ -13,7 +14,7 @@ namespace BadmintonStars.Application.Player.Commands.DeletePlayer
 
         public async Task<int> Handle(DeletePlayerCommand request, CancellationToken cancellationToken)
         {
-           return await _playerRepository.DeletePlayer(request.Id);
+            return await _playerRepository.DeletePlayer(request.Id);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace BadmintonStars.Infrastructure.Services
             );
 
             services.AddTransient<IPlayerRepository, PlayerRepository>();
-            return services;
+            return services; 
         }
     }
 }

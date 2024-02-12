@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace BadmintonStars.Application.Player.Commands.UpdatePlayer
+namespace BadmintonStars.Application.Player.Commands
 {
     public class UpdatePlayerCommand : IRequest<int>
     {
