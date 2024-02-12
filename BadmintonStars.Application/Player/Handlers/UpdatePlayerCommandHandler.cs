@@ -1,8 +1,9 @@
-﻿using BadmintonStars.Domain.Entities;
+﻿using BadmintonStars.Application.Player.Commands;
+using BadmintonStars.Domain.Entities;
 using BadmintonStars.Domain.Repositories;
 using MediatR;
 
-namespace BadmintonStars.Application.Player.Commands.UpdatePlayer
+namespace BadmintonStars.Application.Player.Handlers
 {
     public class UpdatePlayerCommandHandler : IRequestHandler<UpdatePlayerCommand, int>
     {
@@ -24,6 +25,6 @@ namespace BadmintonStars.Application.Player.Commands.UpdatePlayer
             };
 
             return await _playerRepository.UpdatePlayer(request.Id, updatedPlayer);
-        } 
+        }
     }
 }

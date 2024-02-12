@@ -1,10 +1,6 @@
-﻿using BadmintonStars.Application.Player.Commands.AddPlayer;
-using BadmintonStars.Application.Player.Commands.DeletePlayer;
-using BadmintonStars.Application.Player.Commands.UpdatePlayer;
-using BadmintonStars.Application.Player.Queries.GetAllPlayers;
-using BadmintonStars.Application.Player.Queries.GetPlayerById;
+﻿using BadmintonStars.Application.Player.Commands;
+using BadmintonStars.Application.Player.Queries;
 using BadmintonStars.Domain.Entities;
-using BadmintonStars.Infrastructure.Data;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -41,7 +37,7 @@ namespace BadmintonStars.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddPlayer(AddPlayerCommand command)
+        public async Task<IActionResult> CreatePlayer(CreatePlayerCommand command)
         {
             var player = await _mediator.Send(command);
             return CreatedAtAction(nameof(GetPlayerById), new { id = player.Id }, player);

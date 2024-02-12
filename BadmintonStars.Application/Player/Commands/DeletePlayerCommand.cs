@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace BadmintonStars.Application.Player.Commands.DeletePlayer
+namespace BadmintonStars.Application.Player.Commands
 {
     public class DeletePlayerCommand : IRequest<int>
     {
@@ -8,7 +8,7 @@ namespace BadmintonStars.Application.Player.Commands.DeletePlayer
 
         public DeletePlayerCommand(int id)
         {
-            Id = id; 
+            Id = id;
         }
     }
 }

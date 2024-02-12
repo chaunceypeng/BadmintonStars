@@ -1,7 +1,5 @@
 using BadmintonStars.Application.Services;
-using BadmintonStars.Infrastructure.Data;
 using BadmintonStars.Infrastructure.Services;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 

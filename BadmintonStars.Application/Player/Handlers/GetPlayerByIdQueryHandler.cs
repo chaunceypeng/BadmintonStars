@@ -1,14 +1,15 @@
-﻿using BadmintonStars.Domain.Entities;
+﻿using BadmintonStars.Application.Player.Queries;
+using BadmintonStars.Domain.Entities;
 using BadmintonStars.Domain.Repositories;
 using MediatR;
 
-namespace BadmintonStars.Application.Player.Queries.GetPlayerById
+namespace BadmintonStars.Application.Player.Handlers
 {
     public class GetPlayerByIdQueryHandler : IRequestHandler<GetPlayerByIdQuery, PlayerModel?>
     {
         private readonly IPlayerRepository _playerRepoistory;
 
-        public GetPlayerByIdQueryHandler(IPlayerRepository playerRepoistory) 
+        public GetPlayerByIdQueryHandler(IPlayerRepository playerRepoistory)
         {
             _playerRepoistory = playerRepoistory;
         }
@@ -16,6 +17,6 @@ namespace BadmintonStars.Application.Player.Queries.GetPlayerById
         public async Task<PlayerModel?> Handle(GetPlayerByIdQuery request, CancellationToken cancellationToken)
         {
             return await _playerRepoistory.GetPlayerById(request.Id);
-        }        
+        }
     }
 }
