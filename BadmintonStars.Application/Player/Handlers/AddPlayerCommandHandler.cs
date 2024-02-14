@@ -17,7 +17,7 @@ namespace BadmintonStars.Application.Player.Handlers
         public Task<PlayerModel> Handle(CreatePlayerCommand request, CancellationToken cancellationToken)
         {
             var player = new PlayerModel() { FirstName = request.FirstName, LastName = request.LastName, Club = request.Club };
-            _playerRepository.AddPlayer(player);
+            _playerRepository.CreatePlayer(player);
             return Task.FromResult(player);
         }
     }

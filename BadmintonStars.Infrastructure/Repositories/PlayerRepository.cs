@@ -19,7 +19,7 @@ namespace BadmintonStars.Infrastructure.Repositories
             return await _dataContext.Players.AsNoTracking().FirstOrDefaultAsync(m => m.Id == id);   
         }
 
-        public async Task<PlayerModel> AddPlayer(PlayerModel player)
+        public async Task<PlayerModel> CreatePlayer(PlayerModel player)
         {
             await _dataContext.Players.AddAsync(player);
             await _dataContext.SaveChangesAsync();
